@@ -13,7 +13,7 @@ import {UserData} from '../../modal/userdata';
 
 export class LoginComponent implements OnInit {
       form:FormGroup;
-      constructor(private formBuilder:FormBuilder,private loginService:LoginService){
+      constructor(private formBuilder:FormBuilder,private loginService:LoginService,private router: Router){
             this.form = formBuilder.group({
                   email: ['poopu@mail.com', Validators.required],
                   password: ['123456', Validators.required]
@@ -40,7 +40,10 @@ export class LoginComponent implements OnInit {
       });
             console.log(localStorage.getItem('token'));
              this.loginService.getUser().subscribe(
-                  res=> (console.log(res))
+                  res=> {
+                        (console.log(res));
+                              this.router.navigate(['homeuser']);
+                  }
             );
             
       }

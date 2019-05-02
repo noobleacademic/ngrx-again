@@ -16,6 +16,14 @@ import { UserResetPasswordComponent } from './components/forgot-password/user-re
 import {FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { PeopleComponent } from './components/user_home/people/people.component';
+import { HomeuserComponent } from './components/user_home/homeuser/homeuser.component';
+import { ManagementComponent } from './components/user_home/management/management.component';
+import { FacultyComponent } from './components/user_home/faculty/faculty.component';
+import { StudentComponent } from './components/user_home/student/student.component';
+import { ParentComponent } from './components/user_home/parent/parent.component';
+import { EditListComponent } from './components/user_home/edit-list/edit-list.component';
+import { LogoComponent } from './components/uploading/logo/logo.component';
 
 @NgModule({
       declarations: [
@@ -28,7 +36,15 @@ import {FlexLayoutModule} from '@angular/flex-layout';
             ForParentComponent,
             NavHeaderComponent,
             InviteInstitutionComponent,
-            UserResetPasswordComponent
+            UserResetPasswordComponent,
+            PeopleComponent,
+            HomeuserComponent,
+            ManagementComponent,
+            FacultyComponent,
+            StudentComponent,
+            ParentComponent,
+            EditListComponent,
+            LogoComponent
       ],
       imports: [
             BrowserModule,

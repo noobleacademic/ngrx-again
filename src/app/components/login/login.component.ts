@@ -12,14 +12,14 @@ import {UserData} from '../../modal/userdata';
 
 export class LoginComponent implements OnInit {
       form:FormGroup;
-      constructor(private formBuilder:FormBuilder,private loginService:LoginService){
+      constructor(private formBuilder:FormBuilder,private loginService:LoginService,private router: Router){
             this.form = formBuilder.group({
                   email: ['poopu@mail.com', Validators.required],
                   password: ['123456', Validators.required]
-            });  
+            });
       }
-     
-    //  private userLoginForm: any;
+
+      //  private userLoginForm: any;
       private loginEmail: any;
       private loginPassword: any;
       ngOnInit(): void {
@@ -35,15 +35,18 @@ export class LoginComponent implements OnInit {
             this.loginService.authenticateUser(data.email,data.password).subscribe(
                   ras =>{
                         localStorage.setItem('token', JSON.stringify(ras));
-                              console.log(ras.access_token);
-      });
+                        console.log(ras.access_token);
+                  });
             console.log(localStorage.getItem('token'));
-             this.loginService.getUser().subscribe(
-                  res=> (console.log(res))
+            this.loginService.getUser().subscribe(
+                  res=> {
+                        console.log(res);
+                        this.router.navigate(['homeuser']);
+                  }
             );
-            
+
       }
-      
-      
+
+
 }
 

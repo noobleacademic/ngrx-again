@@ -9,6 +9,7 @@ import {UserData} from '../../modal/userdata';
       templateUrl: './login.component.html',
       styleUrls: ['./login.component.css']
 })
+/** The login file is created and updated on Git */
 
 export class LoginComponent implements OnInit {
       form:FormGroup;

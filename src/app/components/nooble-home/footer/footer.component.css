@@ -1,0 +1,21 @@
+.footer {
+      background: #f6fafd;
+      margin: 50px 0 0 0;
+      padding: 50px 0;
+}
+.footer-items{
+      display: inline-block;
+      text-align: left;
+}
+ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+li{
+      cursor: pointer;
+      text-decoration: none;
+}
+li a {
+      color: #212121;
+}

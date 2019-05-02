@@ -1,0 +1,123 @@
+<!----<p-growl [(value)]="growlMsgs" gt></p-growl>-->
+
+<div class="hero-image bg-image animated fadeIn">
+      <div class="container-fluid">
+            <div class="row">
+                  <div class="interim-header">
+                        <div class="interim-logo">
+                              <a href="#">
+                                    <img style="width: 120px;" alt="" src="../../assets/images/nooble-logo-white.png">
+                              </a>
+                        </div>
+                  </div>
+                  <div class="container-wraper">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <div class="login-form-container">
+                                    <div class="animated fadeIn">
+                                          <div   class="content-bg">
+                                                    <mat-card class="example-full-width"  >
+                                                          <mat-card-header>
+                                                          <mat-card-title class="title"><h2 class="text-center login-form-title">Log In</h2></mat-card-title>
+                                                        </mat-card-header>
+
+                                                                      <mat-card-content >
+                                                                            <form [formGroup] = "form"  class="loginForm">
+                                                                                  <div fxLayout="column" fxLayoutAlign="center center " class="test">
+                                                                                        <mat-form-field class="example-full-width">
+                                                                                              <input matInput type="email" placeholder="User Name" formControlName="email">
+                                                                                        </mat-form-field>
+                                                                                        <mat-form-field class="example-full-width">
+                                                                                              <input matInput type="password" placeholder="Password" formControlName="password">
+                                                                                        </mat-form-field>
+                                                                                        <button mat-raised-button  (click)="login()"> Login</button>
+                                                                                  </div>
+                                                                           </form>
+                                                                     </mat-card-content>
+                                                    </mat-card>
+                                          </div>                                     
+                                                                                          
+                                                
+                                                                                                      <!--<span class="pull-left smallest">Not yet on Nooble? <a routerLink="/">Sign Up</a></span>-->
+                                                      <span class="pull-right smallest">
+                    <a style="color: #e72035" [routerLink]="['/resetuserpassword']">Forgot Password?</a>
+                  </span>
+                                                      <div class="clearfix"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                      <button type="button"  class="btn btn-solid btn-full-width">LOG IN WITH PHONE</button>
+                                                </div>
+<!--                                          </form>-->
+                                          <div class="text-center">
+                                                <img style="width: 80px;" alt="" src="../../../assets/images/nooble-computer.png">
+                                          </div>
+                                          <div class="text-justify">
+                                                <p class="smallest">Your information is safe and secure. thanks to our end to end encryption, cryptographic key and more. With
+                                                      such kind of security , you are in the company of names like Nasdaq, IATA, Slack etc.</p>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                              <div class="description">
+                                    <div class="text-justify text-white">
+<!--                                          <h1 class="text-white text-center">{{ welcomeHead }}</h1>-->
+<!--                                          <p>{{ welcomeDesc }}</p>-->
+                                          <!-- <p>Don't have nooble for your institution yet? <a>Request an invite</a></p> -->
+                                    </div>
+                                    <div class="text-center">
+                                          <img style="width: 160px;" alt="" src="../../assets/images/nooble-crown.png">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+<!--</div>-->
+
+
+
+<!-- modal for mobile login -->
+<div class="modal fade" role="dialog">
+      <div class="modal-dialog modal-otp">
+            <div class="modal-content">
+                  <button type="button" class="close otp-close" >&times;</button>
+                  <div id="firebaseui-auth-container"></div>
+            </div>
+      </div>
+</div>
+
+
+<!-- [disabled]="userLoginForm.controls['email'].hasError('pattern')||
+                          userLoginForm.controls['email'].invalid||userLoginForm.controls['password'].hasError('pattern')||
+                          userLoginForm.controls['password'].invalid" -->
+
+
+
+
+
+<!--<div   class="content-bg">-->
+<!--      <mat-card class="example-full-width"  >-->
+<!--            <mat-card-header>-->
+<!--                  <mat-card-title class="title">Sign in</mat-card-title>-->
+<!--                  &lt;!&ndash;<div  fxLayout="column" fxLayoutAlign="end end" class="test">&ndash;&gt;-->
+<!--                  &lt;!&ndash;&lt;!&ndash;<small *ngIf="valid">Invalid Credentials</small>&ndash;&gt;&ndash;&gt;-->
+<!--                  &lt;!&ndash;</div>&ndash;&gt;-->
+<!--            </mat-card-header>-->
+
+<!--            <mat-card-content >-->
+<!--                  <form [formGroup] = "form"  class="loginForm">-->
+<!--                        <div fxLayout="column" fxLayoutAlign="center center " class="test">-->
+<!--                              <mat-form-field class="example-full-width">-->
+<!--                                    <input matInput type="email" placeholder="User Name" formControlName="email">-->
+<!--                              </mat-form-field>-->
+<!--                              <mat-form-field class="example-full-width">-->
+<!--                                    <input matInput type="password" placeholder="Password" formControlName="password">-->
+<!--                              </mat-form-field>-->
+<!--                              <button mat-raised-button  (click)="login()"> Login</button>-->
+<!--                        </div>-->
+<!--                  </form>-->
+<!--            </mat-card-content>-->
+<!--      </mat-card>-->
+<!--</div> -->

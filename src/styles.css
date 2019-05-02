@@ -1,2 +1,1196 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+body {
+      font-family: museo-sans, sans-serif;
+      color: #212121;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 27px
+}
+
+label {
+      color: #727274;
+      font-weight: 100;
+      padding-left: 15px;
+}
+
+button,
+input,
+select,
+textarea {
+      line-height: normal;
+}
+
+.primary-color {
+      color: #535353;
+}
+
+.head-font {
+      font-family: museo, serif;
+}
+
+.body-font {
+      font-family: museo-sans, sans-serif;
+}
+
+h1 {
+      font-family: museo, serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      color: #535353;
+}
+
+h2 {
+      font-family: museo, serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 27px;
+      color: #535353;
+      line-height: 38px;
+}
+
+h3 {
+      font-family: museo, serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: #535353;
+      line-height: 35px;
+}
+
+h4 {
+      font-style: normal;
+      font-weight: 700;
+      color: #535353;
+      line-height: 30px;
+}
+
+h5 {
+      /*font-family: museo, serif;*/
+      font-style: normal;
+      font-weight: 700;
+      color: #535353;
+      line-height: 28px;
+}
+
+h6 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #535353;
+}
+
+.text-black {
+      color: #000;
+}
+
+.hero-image {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      /* Set rules to fill background */
+      min-height: 100%;
+      /*min-width: 1024px;*/
+      /* Set up proportionate scaling */
+      width: 100%;
+      height: auto;
+      /* Set up positioning */
+      position: absolute;
+      /*fixed*/
+      top: 0;
+      left: 0;
+}
+
+p {
+      hyphens: auto;
+}
+
+.no-padding{
+      padding: 0;
+}
+
+.smallest {
+      font-size: 14px;
+      line-height: 20px;
+      color: #212121;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+.text-strong {
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #535353;
+}
+
+.text-limit {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+}
+
+.capitalize {
+      text-transform: capitalize;
+}
+
+a {
+      color: #e72035;
+}
+
+a:hover {
+      text-decoration: none;
+      color: #995860;
+}
+
+.text-hilight {
+      color: #b72033;
+}
+
+.next-icon {
+      font-size: 20px;
+      margin-left: 6px;
+}
+
+.btn {
+      letter-spacing: 1px;
+}
+
+.btn-solid {
+      color: #fff;
+      background-color: #4c1a40;
+      min-width: 100px;
+      width: auto;
+}
+
+.btn.btn-solid:focus {
+      color: #fff;
+      background-color: #4c1a40;
+      outline: none;
+}
+
+.btn-solid:hover {
+      color: #fff;
+      background-color: #2b0121;
+}
+
+.btn-secondary {
+      background-color: #bb8bb0;
+      color: #ffffff;
+}
+
+.btn-secondary:hover {
+      background-color: #bb8bb0;
+      color: #ffffff;
+}
+
+.btn-full-width {
+      width: 100%;
+      height: 50px;
+      margin-top: 15px;
+}
+
+.form-group,
+.feature-text {
+      margin-bottom: 35px;
+}
+
+.form-control {
+      height: 50px;
+      background: #eeeff4;
+}
+
+
+/*for academic form tag*/
+
+form input.ng2-tag-input-field {
+      background: #eeeff4;
+      width: 10% !important;
+}
+
+.alert.alert-danger,
+.alert.alert-success {
+      background-color: transparent;
+      border: none;
+      padding: 0 10px;
+      position: absolute;
+}
+
+.alert.alert-danger {
+      color: #fb6072;
+}
+
+.alert.alert-success {
+      color: #00d397;
+}
+
+.content-area-domain-form {
+      margin: 15% 25%;
+}
+
+.text-white {
+      color: #fff;
+}
+
+.bg-white {
+      background: #fff;
+}
+
+
+/*Styles for FadeIn animation starts here*/
+
+.animated {
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+      0% {
+            opacity: 0;
+            -webkit-transform: translateY(-20px);
+      }
+      100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+      }
+}
+
+@keyframes fadeInDown {
+      0% {
+            opacity: 0;
+            transform: translateY(-20px);
+      }
+      100% {
+            opacity: 1;
+            transform: translateY(0);
+      }
+}
+
+.fadeInDown {
+      -webkit-animation-name: fadeInDown;
+      animation-name: fadeInDown;
+}
+
+
+/*Styles for FadeIn animation ends here*/
+
+.loading-text {
+      font-family: museo, serif;
+      font-style: normal;
+}
+
+.main-header {
+      background: #fff;
+      position: fixed;
+      width: 100%;
+      z-index: 20;
+      -webkit-box-shadow: 0px 1px 29px -11px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 1px 29px -11px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 1px 29px -11px rgba(0, 0, 0, 0.75);
+}
+
+.logo-container {
+      padding-left: 30px;
+      margin: 5px 0;
+}
+
+.notif-flag {
+      font-size: 23px;
+      margin: 20px 20px;
+      cursor: pointer;
+      color: #4c1a40
+}
+
+.notif-count {
+      position: relative;
+      left: -35px;
+      background: #e72037;
+      border-radius: 50px;
+      padding: 2px 6px;
+      font-size: 10px;
+      border: 1px solid #eeeeee;
+      color: #ffffff;
+      cursor: pointer;
+}
+
+
+/*sign up page and interim page header*/
+
+.interim-header {
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+}
+
+.interim-logo {
+      margin: 0 124px;
+}
+
+.description {
+      margin: 65px 0;
+}
+
+.container-wraper {
+      padding-top: 70px;
+}
+
+@media (max-width: 750px) {
+      .interim-logo {
+            margin: 0 50px;
+      }
+}
+
+@media (max-width: 450px) {
+      .interim-logo {
+            margin: 0 27px;
+      }
+}
+
+
+/*portal page styles starts*/
+
+.institution-logo label.uploader {
+      width: 100%;
+      margin: 0;
+}
+
+.title {
+      margin: 15px 0;
+      color: #421438;
+}
+
+.tutorial-area span {
+      color: #e72037;
+      display: block;
+      margin: 25px 0 12px 0;
+}
+
+.modal-header {
+      border: 0;
+}
+
+.modal-footer {
+      text-align: center;
+      cursor: pointer;
+}
+
+.modal-body img {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.6;
+      position: absolute;
+      margin: 0 auto;
+}
+
+.modal-footer-backgrounded {
+      background: #eceff4;
+}
+
+
+/*styles for overlay div start*/
+
+.loading-overlay {
+      text-align: center;
+      position: fixed;
+      background: #000;
+      opacity: 0.6;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2000;
+}
+
+.loading-overlay img {
+      top: 40%;
+      position: relative;
+}
+
+
+/*styles for overlay div end*/
+
+.editable {
+      border-bottom: 1px solid #04be59;
+      outline: none;
+      width: 16px
+}
+
+@media (min-width: 768px) {
+      .modal-dialog.modal-md {
+            width: 680px;
+            margin: 135px auto;
+      }
+      .modal-dialog.modal-sm {
+            width: 325px;
+      }
+}
+
+
+/*portal page styles ends*/
+
+
+/*header style for portal pages ang institution pages*/
+
+.navbar-default {
+      -webkit-box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.75);
+}
+
+.dropdown.header-dropdown{
+      margin: 0 0 0 12px;
+      padding: 18px 0;
+}
+
+/*Loader styles*/
+
+.loading {
+      opacity: 0;
+      transition: opacity .8s ease-in-out;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      background: #fff;
+      z-index: -1;
+}
+
+app-root:empty+.loading {
+      opacity: 1;
+      z-index: 100;
+      text-align: center;
+}
+
+app-root:empty+.loading h4 {
+      position: relative;
+      top: 50%;
+}
+
+
+/*Modal styles*/
+
+.modal {
+      overflow-x: hidden;
+      overflow-y: auto;
+}
+
+/* full screen modal */
+.modal-fullscreen .modal-dialog {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+}
+
+.modal-dialog.modal-otp {
+      width: 364px;
+}
+
+.modal-fullscreen .modal-content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0;
+}
+
+
+/* Tooltip styles starts here*/
+
+.tooltip .tooltip-inner {
+      background-color: #fff;
+      color: #000000;
+      font-size: 11px;
+      -webkit-box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.75);
+}
+
+.tooltip.left .tooltip-arrow {
+      border-left-color: #fff;
+}
+
+.tooltip.right .tooltip-arrow {
+      border-right-color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+      border-top-color: #fff;
+}
+
+.tooltip.bottom .tooltip-arrow {
+      border-bottom-color: #fff;
+}
+
+.fade-in,
+.alert {
+      -webkit-animation: fadein 1s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 1s;
+      /* Firefox < 16 */
+      -ms-animation: fadein 1s;
+      /* Internet Explorer */
+      -o-animation: fadein 1s;
+      /* Opera < 12.1 */
+      animation: fadein 1s;
+}
+
+@keyframes fadein {
+      from {
+            opacity: 0;
+      }
+      to {
+            opacity: 1;
+      }
+}
+
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+      from {
+            opacity: 0;
+      }
+      to {
+            opacity: 1;
+      }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+      from {
+            opacity: 0;
+      }
+      to {
+            opacity: 1;
+      }
+}
+
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+      from {
+            opacity: 0;
+      }
+      to {
+            opacity: 1;
+      }
+}
+
+
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+      from {
+            opacity: 0;
+      }
+      to {
+            opacity: 1;
+      }
+}
+
+
+/*styles for overlay div*/
+
+.loading-overlay {
+      text-align: center;
+      position: fixed;
+      background: #000;
+      opacity: 0.6;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2000;
+}
+
+.loading-overlay img {
+      top: 40%;
+      position: relative;
+}
+
+
+/*sidebar style starts here*/
+
+.nav-side-menu {
+      overflow: auto;
+      font-size: 12px;
+      font-weight: 200;
+      background-color: #2a0121;
+      position: fixed;
+      top: 0px;
+      width: 16.6667%;
+      height: 100%;
+      color: #a790a1;
+}
+
+.nav-side-menu .brand {
+      background-color: #eceff4;
+      line-height: 50px;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #421438;
+      font-family: museo-sans, sans-serif;
+      font-weight: 500;
+}
+
+.nav-side-menu .toggle-btn {
+      display: none;
+}
+
+.nav-side-menu ul,
+.nav-side-menu li {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      line-height: 50px;
+      cursor: pointer;
+}
+
+.menu-list ul li {
+      font-weight: 400;
+}
+
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+      font-family: FontAwesome;
+      content: "\f054";
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      vertical-align: middle;
+      float: right;
+      font-size: 10px;
+}
+
+.nav-side-menu li .arrow-down:before {
+      font-family: FontAwesome;
+      content: "\f078";
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      vertical-align: middle;
+      float: right;
+      font-size: 10px;
+}
+
+
+/*.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}*/
+
+
+/*.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}*/
+
+.nav-side-menu .menu-list ul .sub-menu li {
+      line-height: 35px;
+      padding-left: 30px;
+      font-size: 14px;
+}
+
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+      background-color: #020203;
+}
+
+.nav-side-menu li {
+      padding-left: 15px;
+      font-size: 16px;
+      /*   border-left: 3px solid #2a0121; */
+}
+
+.nav-side-menu li:hover {
+      background-color: #4c1a40;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+}
+
+.nav-side-menu li.toggle-active {
+      border-left: 3px solid #e72037;
+      background-color: #4c1a40;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+}
+
+.nav-side-menu ul .sub-menu li.subtoggle-active,
+.nav-side-menu li .sub-menu li.subtoggle-active {
+      border-left: 3px solid #e72037;
+      background-color: #4c1a40;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+}
+
+.nav-side-menu {
+      margin-top: 62px;
+}
+
+.singoutDropDown {
+      width: 100%;
+}
+
+.singoutDropDown li {
+      padding: 0;
+}
+
+
+/*sidebar style ends*/
+
+
+/*Styles for tag iput*/
+
+.tag-input {
+      box-shadow: none;
+      padding: 0 0 0 6px;
+}
+
+ng2-dropdown-menu .ng2-dropdown-menu {
+      z-index: 100000 !important;
+}
+
+.form-control.tag-input {
+      min-height: 50px;
+      height: auto;
+}
+
+tag {
+      background: #b0b3bb !important;
+      padding: 0 8px 0 8px !important;
+      margin-top: 5px !important;
+}
+
+tag-input-form input {
+      background: #eeeff4 !important;
+      margin-top: 2px !important;
+      width: 100% !important;
+}
+
+tag-input-form {
+      min-width: 15% !important;
+}
+
+.ng2-tag-input.ng2-tag-input--focused {
+      border: none !important;
+}
+
+.ng2-tag-input {
+      border: none !important;
+}
+
+
+/*Date picker Styles*/
+
+datepicker table thead tr:first-child {
+      height: 75px;
+      background-color: #2a0121;
+}
+
+datepicker table thead tr:first-child .btn-default,
+datepicker table thead tr:nth-child(2) {
+      color: #fff;
+      background-color: #2a0121;
+}
+
+datepicker table thead tr:first-child .btn-default:hover {
+      color: #fff;
+      background-color: #2a0121;
+      border: none;
+      outline: none;
+      font-size: 14px;
+}
+
+datepicker table tr .btn-default {
+      color: #fff;
+      background-color: #4c1a40;
+      border: none;
+      border-radius: 0;
+      height: 35px;
+}
+
+datepicker table tr {
+      height: 30px;
+}
+
+datepicker table {
+      background-color: #4c1a40;
+}
+
+datepicker table td,
+datepicker table th {
+      padding: 2px 2px;
+}
+
+datepicker .btn-default.active,
+datepicker .btn-default:active,
+datepicker .open>.dropdown-toggle.btn-default,
+datepicker .btn-default:hover {
+      background-color: #e72035;
+      border: none;
+      border-radius: 50px;
+      -webkit-box-shadow: 0px 0px 35px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 35px -7px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 35px -7px rgba(0, 0, 0, 0.75);
+}
+
+datepicker .text-info {
+      color: #fff;
+}
+
+.well.well-sm {
+      position: fixed;
+      background: transparent;
+      border: none;
+}
+
+.datepicker-modal .modal-content {
+      border: none;
+}
+
+
+/* Slim cropper styles*/
+
+slim .slim {
+      border-radius: 10px;
+}
+
+
+/*shadow*/
+
+.shadow {
+      background: #fff;
+      -webkit-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* style for pages having header */
+
+.page-wrapper {
+      margin-top: 70px;
+}
+
+
+/*style for editable table*/
+
+.invalid-data-table .table {
+      border: 1px solid #eceff4;
+      margin-bottom: 0;
+}
+
+.invalid-data-table .table td,
+.invalid-data-table .table th {
+      vertical-align: middle;
+      padding: 3px;
+}
+
+.invalid-data-table .table td {
+      font-weight: 400;
+      color: #333333;
+}
+
+.btn-back {
+      min-width: 100px;
+      width: auto;
+}
+
+pagination .pagination {
+      margin: 10px 0 20px 0;
+}
+
+
+/*======================*/
+
+
+/* CSV upload modal style */
+
+.csv-titles ul {
+      padding: 0;
+}
+
+.csv-titles li {
+      padding: 0 3px;
+      display: inline-block;
+      border: 2px solid #eceff4;
+      border-radius: 5px;
+      margin: 3px;
+      font-size: 14px;
+}
+
+.csv-file-uploader {
+      margin: 20px 0;
+}
+
+#managementCsvModal .modal-footer {
+      text-align: left;
+      border: 0;
+      cursor: default;
+}
+
+.termCheck {
+      width: 20px;
+      height: 20px;
+}
+
+#managementCsvModal .modal-footer label {
+      padding-left: 8px;
+      position: absolute;
+}
+
+.mapping-area {
+      border: 2px solid #eceff4;
+      border-radius: 5px;
+      padding: 5px 15px 0 15px;
+;
+}
+
+.mapping-area ul {
+      padding: 0;
+}
+
+.mapping-area ul li {
+      list-style-type: none;
+      margin: 10px 0;
+}
+
+.mapping-area ul li i {
+      margin: 0 30px 0 0;
+      font-size: 20px;
+}
+
+.mapping-area .form-control {
+      height: 31px;
+      background: #eeeff4;
+      float: right;
+      width: 55%;
+}
+
+.mapping-area .fa-check-circle {
+      color: #04be59;
+}
+
+.mapping-area .fa-exclamation-circle {
+      color: #ff9a48;
+}
+
+
+/*==================*/
+
+
+/*style for filtering*/
+
+.filtre-wrapper {
+      background: #eceff4;
+}
+
+.filtre-wrapper ul {
+      padding-left: 5px;
+}
+
+.filtre-wrapper ul li {
+      list-style-type: none;
+}
+
+.filtre-wrapper li label {
+      padding-left: 6px;
+      font-weight: 400;
+}
+
+.filter-item-container {
+      background: #eceff4;
+      overflow: hidden;
+}
+
+.filter-item-container .items-container {
+      padding: 8px;
+}
+
+.filter-item-container ul {
+      padding-left: 15px;
+}
+
+
+/*=========================*/
+
+
+/* Style for Edit table row icons (View, Edit, Delete ) */
+
+.fa-eye,
+.fa-trash-o,
+.fa-pencil-square-o {
+      font-size: 16px;
+      margin: 0 2px;
+}
+
+.fa-eye {
+      color: #1e8ee0;
+}
+
+.fa-trash-o {
+      color: #f7465b;
+}
+
+.fa-pencil-square-o {
+      color: #2ac297;
+}
+
+
+/*style for prime elements */
+
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+      font-family: museo-sans, sans-serif;
+      font-size: 15px;
+}
+
+.ui-tabview.ui-tabview-top>.ui-tabview-nav li {
+      width: 49.6% !important;
+}
+
+
+/*style for growl message */
+
+p-growl {
+      z-index: 15000 !important;
+}
+.ui-growl.ui-widget {
+      z-index: 15000 !important;
+}
+
+
+/*style for header label message */
+
+.ui-messages-info {
+      background-color: #1e8ee0;
+      border-color: #1e8ee0;
+}
+
+/* style for pick list */
+
+.source-list .ui-picklist-listwrapper.ui-picklist-target-wrapper.ui-picklist-listwrapper-nocontrols{
+      display:none;
+}
+.source-list .ui-picklist>div.ui-picklist-buttons{
+      display: none;
+}
+.source-list .ui-picklist, .source-list .ui-picklist .ui-picklist-list{
+      width:100%;
+      height: auto;
+      max-height: 20em;
+}
+
+/* style for prime radio button*/
+label.ui-radiobutton-label {
+      padding: 0 20px 0 0;
+}
+/* style for password reset and update*/
+
+.form-success {
+      margin-top: 2%;
+      font-size: 22px;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+}
+
+.form-success .btn {
+      padding: 15px 100px;
+}
+
+
+/* Responsessive Starts here */
+
+@media (max-width: 992px) {
+      .nav-side-menu {
+            position: relative;
+            width: 100%;
+            margin-bottom: 10px;
+      }
+      .nav-side-menu .toggle-btn {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 10 !important;
+            padding: 3px;
+            background-color: #ffffff;
+            color: #000;
+            width: 40px;
+            text-align: center;
+      }
+      .brand {
+            text-align: left !important;
+            font-size: 22px;
+            padding-left: 20px;
+            line-height: 50px !important;
+            outline: 1px solid;
+      }
+}
+
+@media (min-width: 992px) {
+      .no-left-padding {
+            padding-left: 0 !important;
+      }
+      .signoutArrow {
+            display: inline-block;
+      }
+}
+
+@media (max-width: 992px) {
+      .signoutArrow {
+            display: none;
+      }
+}
+
+@media (min-width: 767px) {
+      .nav-side-menu .menu-list .menu-content {
+            display: block;
+      }
+      #main {
+            width: calc(100% - 300px);
+            float: right;
+      }
+}
+
+@media (max-width: 510px) {
+      .ui-tabview.ui-tabview-top>.ui-tabview-nav li {
+            width: 49.2% !important;
+      }
+}

@@ -16,14 +16,21 @@ import { UserResetPasswordComponent } from './components/forgot-password/user-re
 import {FormGroup, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule, MatFormFieldModule, MatInputModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import { PeopleComponent } from './components/user_home/people/people.component';
-import { HomeuserComponent } from './components/user_home/homeuser/homeuser.component';
-import { ManagementComponent } from './components/user_home/management/management.component';
-import { FacultyComponent } from './components/user_home/faculty/faculty.component';
-import { StudentComponent } from './components/user_home/student/student.component';
-import { ParentComponent } from './components/user_home/parent/parent.component';
-import { EditListComponent } from './components/user_home/edit-list/edit-list.component';
-import { LogoComponent } from './components/uploading/logo/logo.component';
+import { HomeUserComponent } from './components/User_home/userhome/home-user.component';
+import { PortalPagesComponent } from './components/User_home/portal-pages/portal-pages.component';
+import { ManageFeesComponent } from './components/User_home/manage-fees/manage-fees.component';
+import { PeoplesComponent } from './components/User_home/peoples/peoples.component';
+import { DashboardComponent } from './components/User_home/dashboard/dashboard.component';
+import { OfflinePaymentsComponent } from './components/User_home/offline-payments/offline-payments.component';
+import { FacultyComponent } from './components/User_home/peoples/faculty/faculty.component';
+import { ParentsComponent } from './components/User_home/peoples/parents/parents.component';
+import { EditListComponent } from './components/User_home/peoples/edit-list/edit-list.component';
+import { ManagementComponent } from './components/User_home/peoples/management/management.component';
+import { StudentsComponent } from './components/User_home/peoples/students/students.component';
+import { AddInstitutionComponent } from './components/User_home/add-institution/add-institution.component';
+import { NewCreationComponent } from './components/User_home/peoples/edit-list/new-creation/new-creation.component';
+import { IndvidalUploadComponent } from './components/User_home/peoples/management/indvidal-upload/indvidal-upload.component';
+import { BulkUploadComponent } from './components/User_home/peoples/management/bulk-upload/bulk-upload.component';
 
 @NgModule({
       declarations: [
@@ -37,14 +44,21 @@ import { LogoComponent } from './components/uploading/logo/logo.component';
             NavHeaderComponent,
             InviteInstitutionComponent,
             UserResetPasswordComponent,
-            PeopleComponent,
-            HomeuserComponent,
-            ManagementComponent,
+            HomeUserComponent,
+            PortalPagesComponent,
+            ManageFeesComponent,
+            PeoplesComponent,
+            DashboardComponent,
+            OfflinePaymentsComponent,
             FacultyComponent,
-            StudentComponent,
-            ParentComponent,
+            ParentsComponent,
             EditListComponent,
-            LogoComponent
+            ManagementComponent,
+            StudentsComponent,
+            AddInstitutionComponent,
+            NewCreationComponent,
+            IndvidalUploadComponent,
+            BulkUploadComponent
       ],
       imports: [
             BrowserModule,
